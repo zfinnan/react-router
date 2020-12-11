@@ -45,8 +45,8 @@ function App() {
       />
       <Route 
         path="/procedures/:id" 
-        render={(routeInfo) => {
-          const id = routeInfo.match.params.id
+        render={(routeProps) => {
+          const id = routeProps.match.params.id
           const targetProcedure = proceduresList.find((p) => p.id === parseInt(id))
           return <ProcedureDetails procedure={targetProcedure} />
         }} 
