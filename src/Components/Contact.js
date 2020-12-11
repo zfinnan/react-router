@@ -1,5 +1,13 @@
 function Contact() {
-    return (<div>This is the contact page</div>)
+    return (
+        <>
+        <h1>Contact</h1>
+        <div>
+            Email: dentist@dentist.com
+            Phone: 1-800-555-4444
+        </div>
+        </>
+    )
 }
 
-export default Contact
+export default Contact 

@@ -1,5 +1,16 @@
-function Procedures() {
-    return (<div>This is the Procedures page</div>)
+function Procedures(props) {
+    const procedureItems = props.proceduresList.map((p) => {
+        return <li>{p.name}</li>
+    })
+
+    return (
+        <>
+        <h1>Procedures</h1>
+        <ul>
+            {procedureItems}
+        </ul>
+        </>
+    )
 }
 
 export default Procedures
